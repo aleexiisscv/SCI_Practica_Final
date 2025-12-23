@@ -47,19 +47,19 @@ MF3='Far':'trapmf',[5.4 7.6 15 15]
 Name='linear_vel_ackerman_kmh'
 Range=[0 50]
 NumMFs=3
-MF1='Slow':'trimf',[0 20 34]
-MF2='Medium':'trimf',[32 44 50]
+MF1='Slow':'trimf',[0 21 36]
+MF2='Medium':'trimf',[34 47 50]
 MF3='Fast':'trimf',[46 50 50]
 
 [Output2]
 Name='steering_wheel_angle'
 Range=[-90 90]
 NumMFs=5
-MF1='Strong_Left':'trimf',[16 30 48]
-MF2='Left':'trimf',[5 16 30]
-MF3='Straight':'trimf',[-2 0 2]
-MF4='Right':'trimf',[-36 -20 -7]
-MF5='Strong_Right':'trimf',[-62 -42 -24]
+MF1='Strong_Left':'trimf',[14 26 40]
+MF2='Left':'trimf',[4 14 26]
+MF3='Straight':'trimf',[-5 0 5]
+MF4='Right':'trimf',[-26 -14 -4]
+MF5='Strong_Right':'trimf',[-45 -30 -18]
 
 [Rules]
 0 0 1 0, 2 1, 1 1
@@ -73,10 +73,10 @@ MF5='Strong_Right':'trimf',[-62 -42 -24]
 1 0 0 0, 2 5, 1 1
 0 1 0 0, 2 1, 1 1
 1 1 0 0, 1 3, 1 1
-3 3 2 2, 3 5, 1 1
-3 3 3 2, 3 5, 1 1
-3 3 2 3, 3 5, 1 1
-3 3 3 3, 3 5, 1 1
-2 2 2 2, 3 5, 1 1
+3 3 2 2, 3 4, 1 1
+3 3 3 2, 3 4, 1 1
+3 3 2 3, 3 4, 1 1
+3 3 3 3, 3 4, 1 1
+2 2 2 2, 3 4, 1 1
 2 3 0 0, 3 5, 1 1
 3 2 0 0, 3 5, 1 1
