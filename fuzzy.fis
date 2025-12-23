@@ -1,5 +1,5 @@
 [System]
-Name='Ackerman'
+Name='Ackerman_SinObstaculos_NoInvasion_Puro_v13_FasterBiasSafe'
 Type='mamdani'
 Version=2.0
 NumInputs=4
@@ -47,9 +47,9 @@ MF3='Far':'trapmf',[5.0 7.0 15 15]
 Name='linear_vel_ackerman_kmh'
 Range=[0 50]
 NumMFs=3
-MF1='Slow':'trimf',[0 16 28]
-MF2='Medium':'trimf',[24 34 44]
-MF3='Fast':'trimf',[40 48 50]
+MF1='Slow':'trimf',[0 18 30]
+MF2='Medium':'trimf',[28 40 48]
+MF3='Fast':'trimf',[44 50 50]
 
 [Output2]
 Name='steering_wheel_angle'
