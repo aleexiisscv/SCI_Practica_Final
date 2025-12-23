@@ -31,25 +31,25 @@ MF3='Far':'trapmf',[8.5 11.5 15 15]
 Name='sonar_5_right_side_front'
 Range=[0 15]
 NumMFs=3
-MF1='Near':'trapmf',[0 0 1.6 3.4]
-MF2='Medium':'trimf',[2.6 4.2 6.0]
-MF3='Far':'trapmf',[5.0 7.0 15 15]
+MF1='Near':'trapmf',[0 0 1.8 3.8]
+MF2='Medium':'trimf',[2.8 4.4 6.2]
+MF3='Far':'trapmf',[5.4 7.6 15 15]
 
 [Input4]
 Name='sonar_6_right_side_rear'
 Range=[0 15]
 NumMFs=3
-MF1='Near':'trapmf',[0 0 1.6 3.4]
-MF2='Medium':'trimf',[2.6 4.2 6.0]
-MF3='Far':'trapmf',[5.0 7.0 15 15]
+MF1='Near':'trapmf',[0 0 1.8 3.8]
+MF2='Medium':'trimf',[2.8 4.4 6.2]
+MF3='Far':'trapmf',[5.4 7.6 15 15]
 
 [Output1]
 Name='linear_vel_ackerman_kmh'
 Range=[0 50]
 NumMFs=3
-MF1='Slow':'trimf',[0 18 30]
-MF2='Medium':'trimf',[28 40 48]
-MF3='Fast':'trimf',[44 50 50]
+MF1='Slow':'trimf',[0 20 34]
+MF2='Medium':'trimf',[32 44 50]
+MF3='Fast':'trimf',[46 50 50]
 
 [Output2]
 Name='steering_wheel_angle'
@@ -58,25 +58,25 @@ NumMFs=5
 MF1='Strong_Left':'trimf',[16 30 48]
 MF2='Left':'trimf',[5 16 30]
 MF3='Straight':'trimf',[-2 0 2]
-MF4='Right':'trimf',[-34 -18 -6]
-MF5='Strong_Right':'trimf',[-65 -42 -22]
+MF4='Right':'trimf',[-36 -20 -7]
+MF5='Strong_Right':'trimf',[-62 -42 -24]
 
 [Rules]
-0 0 1 0, 2 2, 1 1
-0 0 0 1, 2 2, 1 1
-0 0 1 1, 1 2, 1 1
+0 0 1 0, 2 1, 1 1
+0 0 0 1, 2 1, 1 1
+0 0 1 1, 1 1, 1 1
 0 0 2 0, 3 4, 1 1
 0 0 0 2, 3 4, 1 1
-0 0 3 0, 3 5, 1 1
-0 0 0 3, 3 5, 1 1
-0 0 3 3, 3 5, 1 1
+0 0 3 0, 3 4, 1 1
+0 0 0 3, 3 4, 1 1
+0 0 3 3, 3 4, 1 1
 1 0 0 0, 2 5, 1 1
 0 1 0 0, 2 1, 1 1
 1 1 0 0, 1 3, 1 1
-3 3 2 2, 3 4, 1 1
+3 3 2 2, 3 5, 1 1
 3 3 3 2, 3 5, 1 1
 3 3 2 3, 3 5, 1 1
 3 3 3 3, 3 5, 1 1
-2 2 2 2, 3 4, 1 1
+2 2 2 2, 3 5, 1 1
 2 3 0 0, 3 5, 1 1
-3 2 0 0, 3 4, 1 1
+3 2 0 0, 3 5, 1 1
