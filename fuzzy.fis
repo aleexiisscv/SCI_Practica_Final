@@ -1,5 +1,5 @@
 [System]
-Name='Ackerman_0245_Centroid_v25_FastBalancedSteer'
+Name='Ackerman_0245_Centroid_v25_3_FasterZeroInvasionTry'
 Type='mamdani'
 Version=2.0
 NumInputs=4
@@ -47,18 +47,18 @@ MF3='Far':'trapmf',[5.4 7.0 15 15]
 Name='linear_vel_ackerman_kmh'
 Range=[0 50]
 NumMFs=3
-MF1='Slow':'trimf',[0 18 30]
-MF2='Cruise':'trimf',[32 46 50]
-MF3='Fast':'trapmf',[42 46 50 50]
+MF1='Slow':'trimf',[0 22 34]
+MF2='Cruise':'trimf',[36 48 50]
+MF3='Fast':'trapmf',[45 48 50 50]
 
 [Output2]
 Name='steering_wheel_angle'
 Range=[-90 90]
 NumMFs=5
 MF1='Strong_Left':'trimf',[16 30 46]
-MF2='Left':'trimf',[6 16 30]
+MF2='Left':'trimf',[8 18 34]
 MF3='Straight':'trimf',[-5 0 5]
-MF4='Right':'trimf',[-38 -22 -10]
+MF4='Right':'trimf',[-42 -26 -12]
 MF5='Strong_Right':'trimf',[-62 -44 -30]
 
 [Rules]
