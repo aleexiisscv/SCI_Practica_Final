@@ -57,7 +57,7 @@ Range=[0 50]
 NumMFs=4
 MF1='Stop':'trapmf',[0 0 2 5]
 MF2='Slow':'trimf',[3 10 18]
-MF3='Cruise':'trimf',[15 25 35]
+MF3='Cruise':'trimf',[18 27 37]
 MF4='Fast':'trapmf',[30 40 50 50]
 
 [Output2]
