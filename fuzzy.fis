@@ -68,7 +68,7 @@ MF1='RightSharp':'trapmf',[-90 -90 -55 -30]
 MF2='Right':'trimf',[-28 -14 -4]
 MF3='Straight':'trimf',[-12 -1 10]
 MF4='Left':'trimf',[6 14 26]
-MF5='LeftSharp':'trapmf',[34 58 90 90]
+MF5='LeftSharp':'trapmf',[26 58 90 90]
 
 [Rules]
 1 0 0 0, 2 1 (1) : 1
@@ -114,5 +114,6 @@ MF5='LeftSharp':'trapmf',[34 58 90 90]
 0 4 4 3, 4 2 (0.35) : 1
 0 4 4 4, 4 2 (0.30) : 1
 3 4 4 0, 3 2 (0.25) : 1
+
 
 
