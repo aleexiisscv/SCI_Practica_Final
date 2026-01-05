@@ -25,7 +25,7 @@ Y = double(Y);
 %% 3) Steering “seguro”: suavizado + SESGO FIJO
 Y(2,:) = movmean(Y(2,:), 5);
 
-steer_bias = -2.43;              % AJUSTA AQUÍ (micro pasos: -2.38, -2.40, -2.45)
+steer_bias = -2.43;              
 Y(2,:) = Y(2,:) + steer_bias;
 
 Y(2,:) = max(-60.0, min(60.0, Y(2,:)));            % límite final aprendido
@@ -38,7 +38,7 @@ X = X(:,idx);
 Y = Y(:,idx);
 
 %% 5) Data augmentation (robustez): ruido crudo + dropout de sensores
-X_aug = X + 0.3*randn(size(X));                     % si te hace inestable: baja a 0.2
+X_aug = X + 0.3*randn(size(X));                     
 X_aug = max(0.1, min(15.0, X_aug));
 
 X_drop = X;
@@ -90,3 +90,4 @@ save('net_ff_6front_solo_sesgo.mat', ...
      'net','tr','sensor_cols','vel_col','steer_col');
 
 gensim(net, 0.1);
+
