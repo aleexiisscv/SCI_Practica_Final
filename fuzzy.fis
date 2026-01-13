@@ -1,5 +1,5 @@
 [System]
-Name='ackerman_4sonar_fast_safe_v12'
+Name='controlador_borroso_sinObstaculos'
 Type='mamdani'
 Version=2.0
 NumInputs=4
