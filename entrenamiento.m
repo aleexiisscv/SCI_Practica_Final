@@ -36,7 +36,6 @@ targets_all(isnan(targets_all) | isinf(targets_all)) = 0;
 % ---- 3) Crear y entrenar red (normalización interna) ----
 net = feedforwardnet([20 10], 'trainlm');
 
-% Clave: la red se normaliza sola (en Simulink no haces nada)
 net.inputs{1}.processFcns  = {'mapminmax'};
 net.outputs{1}.processFcns = {'mapminmax'};
 
@@ -60,10 +59,7 @@ rmse_steer = sqrt(mean(err(2,:).^2));
 fprintf('RMSE velocidad = %.3f km/h\n', rmse_vel);
 fprintf('RMSE steering  = %.3f grados\n', rmse_steer);
 
-% (opcional) Nerviosismo de steering por muestra (0.1s)
-dsteer = diff(outputs(2,:));
-fprintf('Pico |Δsteer| = %.3f grados/0.1s\n', max(abs(dsteer)));
-
 % ---- 5) Generar bloque Simulink ----
 Ts = 0.1;
 gensim(net, Ts);
+
